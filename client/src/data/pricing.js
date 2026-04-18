@@ -1,0 +1,47 @@
+export const pricingPlans = [
+  {
+    id: "starter",
+    name: "Starter",
+    description: "Ideal for startups building their first MVP.",
+    price: "Custom",
+    features: [
+      "Rapid Prototyping",
+      "Core Feature Development",
+      "Essential UI/UX Design",
+      "Standard Technical Support",
+      "Cloud Infrastructure Setup",
+    ],
+    cta: "Start Your Build",
+    popular: false,
+  },
+  {
+    id: "growth",
+    name: "Growth",
+    description: "For scaling businesses needing advanced tech.",
+    price: "Custom",
+    features: [
+      "Full-Stack Development",
+      "Advanced System Integrations",
+      "Performance Optimization",
+      "Priority Specialized Support",
+      "AI/Automation Consultation",
+    ],
+    cta: "Scale Your Product",
+    popular: true,
+  },
+  {
+    id: "enterprise",
+    name: "Enterprise",
+    description: "Custom solutions for large-scale operations.",
+    price: "Custom",
+    features: [
+      "Dedicated Expert Squad",
+      "Custom AI/Web3 Architecture",
+      "99.99% Service Level Agreement",
+      "Infinite Scaling Support",
+      "24/7 Priority Support",
+    ],
+    cta: "Request Enterprise Quote",
+    popular: false,
+  },
+];
