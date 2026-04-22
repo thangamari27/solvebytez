@@ -59,7 +59,7 @@ export default function ServiceCard({ service, index }) {
           Service 0{service.id}
         </span>
         <motion.a
-          href="#contact"
+          href={service.link}
           whileHover={{ x: 4 }}
           className="flex items-center gap-1.5 text-primary text-sm font-bold opacity-0 group-hover:opacity-100 transition-all"
           aria-label={`Learn more about ${service.title}`}

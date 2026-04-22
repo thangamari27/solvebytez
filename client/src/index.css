@@ -90,7 +90,7 @@
   }
 
   .section-pad {
-    @apply py-24 px-4 sm:px-6 lg:px-8;
+    @apply py-8 px-4 sm:px-6 lg:px-8;
   }
 
   /* PRIMARY BUTTON */

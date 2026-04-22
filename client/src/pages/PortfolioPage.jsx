@@ -179,7 +179,7 @@ function PortfolioHero() {
         <div className="absolute bottom-0 left-10 w-64 h-64 rounded-full bg-[#29CCFF]/10 blur-2xl" />
       </div>
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pb-14">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pb-6">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
@@ -647,7 +647,7 @@ function CTASection() {
   const [hBtn, setHBtn] = useState(false);
 
   return (
-    <section ref={ref} className="relative overflow-hidden py-24 px-6" style={{
+    <section ref={ref} className="relative overflow-hidden py-8 px-6" style={{
       background: "linear-gradient(120deg,#030d2e 0%,#071542 50%,#0d2260 100%)",
     }}>
       {/* Background Pattern Image */}

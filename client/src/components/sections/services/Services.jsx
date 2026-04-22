@@ -17,7 +17,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="relative py-10 overflow-hidden bg-white"
+      className="relative pt-8 overflow-hidden bg-white"
       aria-labelledby="services-heading"
     >
       {/* PNG Background Pattern */}
@@ -34,7 +34,7 @@ export default function Services() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* HEADER */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-14">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-4">
           <div className="space-y-4 max-w-2xl">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -125,7 +125,7 @@ export default function Services() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="flex flex-col md:flex-row items-center justify-between gap-6 mt-5 py-5 px-2 border-2 border-gray-200 rounded-2xl"
+          className="flex flex-col md:flex-row items-center justify-between gap-6 mb-5 py-4 px-2 border-2 border-gray-200 rounded-2xl"
         >
           {/* LEFT */}
           <div className="flex items-center gap-6">

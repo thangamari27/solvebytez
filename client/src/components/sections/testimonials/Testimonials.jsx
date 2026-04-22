@@ -63,7 +63,7 @@ export default function Testimonials() {
     <section
       id="testimonials"
       ref={sectionRef}
-      className="relative py-28 overflow-hidden"
+      className="relative py-8 overflow-hidden"
       style={{
         background: "#0D1B3E", // Dark navy background
         backgroundImage: "linear-gradient(135deg, #0D1B3E 0%, #0a0a2e 50%, #0D1B3E 100%)",
@@ -100,7 +100,7 @@ export default function Testimonials() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-14">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-6">
           <div className="space-y-4 max-w-2xl">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -168,7 +168,7 @@ export default function Testimonials() {
           ref={scrollRef}
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
-          className="flex gap-6 overflow-x-auto pb-8 scroll-smooth snap-x snap-mandatory"
+          className="flex gap-6 overflow-x-auto pb-4 scroll-smooth snap-x snap-mandatory"
           style={{ 
             scrollbarWidth: "none", 
             msOverflowStyle: "none",
@@ -245,7 +245,7 @@ export default function Testimonials() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
-          className="flex justify-center mt-6"
+          className="flex justify-center"
         >
           <p className="text-white/30 text-xs flex items-center gap-2">
             <span>←</span> Scroll to see more <span>→</span>

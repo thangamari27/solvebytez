@@ -17,7 +17,7 @@ export default function CTASection() {
   return (
     <section
       ref={sectionRef}
-      className="py-24 overflow-hidden relative bg-light"
+      className="py-4 overflow-hidden relative bg-light"
       id="contact"
       aria-labelledby="cta-heading"
     >

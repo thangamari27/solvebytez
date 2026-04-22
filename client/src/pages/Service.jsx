@@ -61,7 +61,7 @@ function ServiceHero({ title, breadcrumb, heroImage, icon: Icon }) {
       </div>
 
       {/* ── content ── */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-8 pb-14">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-8 pb-6">
         {/* breadcrumb */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
@@ -129,7 +129,7 @@ function ServiceIntro({ title, subtitle, description, image, imageAlt = "Service
     <section className="section-pad bg-white">
       <div className="max-w-7xl mx-auto">
         {/* centered header */}
-        <motion.div {...fadeUp(0)} className="text-center mb-16">
+        <motion.div {...fadeUp(0)} className="text-center mb-6">
           {subtitle && (
             <span className="inline-block text-xs font-bold tracking-widest uppercase text-primary bg-primary/8 px-4 py-1.5 rounded-full border border-primary/20 mb-4">
               {subtitle}
@@ -244,7 +244,7 @@ function ServiceSection({
       <motion.div
         whileHover={{ scale: 1.04, rotate: 0.5 }}
         transition={{ duration: 0.4, ease: "easeOut" }}
-        className="relative z-10 rounded-2xl overflow-hidden shadow-xl border border-surface-border w-full max-w-[440px]"
+        className="relative z-10 rounded-2xl overflow-hidden shadow-xl border border-surface-border w-full max-w-[440px] h-[280px]"
       >
         {image ? (
           <img src={image} alt={imageAlt} className="w-full h-full object-cover" />
@@ -362,7 +362,7 @@ function ServiceCTA({
   secondaryLink = "https://wa.me/919599179795",
 }) {
   return (
-    <section className="relative overflow-hidden bg-brand-dark py-28 px-6">
+    <section className="relative overflow-hidden bg-brand-dark py-8 px-6">
       {/* bg effects */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-transparent to-brand-cyan/10 pointer-events-none" />
       <div className="absolute top-0 right-0 w-[30rem] h-[30rem] rounded-full bg-primary/15 blur-3xl pointer-events-none" />
@@ -484,7 +484,7 @@ export default function Service({ data }) {
       />
 
       {/* ── 2. Intro ── */}
-      {intro && (
+      {/* {intro && (
         <ServiceIntro
           title={intro.title}
           subtitle={intro.subtitle}
@@ -492,7 +492,7 @@ export default function Service({ data }) {
           image={intro.image}
           imageAlt={intro.imageAlt}
         />
-      )}
+      )} */}
 
       {/* ── 3. Feature sections (alternating) ── */}
       {sections.map((section, i) => (

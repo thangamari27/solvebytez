@@ -84,7 +84,7 @@ function PageHero({ title, crumb }) {
         <div className="absolute bottom-0 left-10 w-64 h-64 rounded-full bg-[#29CCFF]/10 blur-2xl" />
       </div>
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pb-14">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pb-6">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
@@ -291,7 +291,7 @@ export default function Contact() {
       <section className="section-pad">
         <div className="max-w-6xl mx-auto">
           {/* header */}
-          <motion.div {...fadeUp(0)} className="text-center mb-14">
+          <motion.div {...fadeUp(0)} className="text-center mb-6">
             <span className="inline-block text-xs font-bold tracking-widest uppercase text-primary bg-primary/8 px-4 py-1.5 rounded-full border border-primary/20 mb-4">
               Get In Touch
             </span>
@@ -314,7 +314,7 @@ export default function Contact() {
       </section>
 
       {/* ── Map Section ── */}
-      <section className="bg-surface-muted py-16 px-6">
+      <section className="bg-surface-muted py-6 px-6">
         <motion.div {...fadeUp(0)} className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
             <h3 className="text-2xl font-extrabold text-gray-900 font-heading">

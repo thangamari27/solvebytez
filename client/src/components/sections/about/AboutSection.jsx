@@ -44,7 +44,7 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="overflow-hidden relative py-10"
+      className="overflow-hidden relative py-4"
       aria-labelledby="about-heading"
     >
       {/* Background Image with Black Overlay */}
@@ -73,7 +73,7 @@ export default function AboutSection() {
         aria-hidden="true"
       />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10" ref={ref}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 relative z-10" ref={ref}>
         <div className="grid lg:grid-cols-2 gap-14 items-center">
           {/* Left content - Glass Morphism Card */}
           <motion.div

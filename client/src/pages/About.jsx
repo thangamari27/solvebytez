@@ -82,7 +82,7 @@ function PageHero({ title, crumb }) {
         <div className="absolute bottom-0 left-10 w-64 h-64 rounded-full bg-[#29CCFF]/10 blur-2xl" />
       </div>
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pb-14">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pb-6">
         <motion.div {...fadeUp(0.1)}>
           <div className="flex items-center gap-2 text-sm text-[#29CCFF]/80 mb-3 font-medium">
             <Link to="/" className="hover:text-[#29CCFF] transition-colors">Home</Link>
@@ -154,20 +154,20 @@ export default function About() {
         
         {/* LEFT */}
         <motion.div {...fadeUp(0)} className="relative z-10">
-          <span className="inline-block text-xs font-bold tracking-widest uppercase text-primary bg-primary/8 px-4 py-1.5 rounded-full mb-5 border border-primary/20">
+          <span className="inline-block text-xs font-bold tracking-widest uppercase text-primary bg-primary/8 px- py- rounded-full mb-2 border border-primary/20">
             IT Support For Business
           </span>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight mb-6 font-heading">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight mb-2 font-heading">
             Your Trusted Partner in{" "}
             <span className="text-gradient-primary">IT Excellence</span>
           </h2>
-          <p className="text-gray-600 leading-relaxed mb-4">
+          <p className="text-gray-600 leading-relaxed mb-2">
             We are passionate about empowering businesses with innovative IT solutions
             that drive growth, efficiency, and success. With a team of dedicated
             professionals and cutting-edge technology, we transform challenges into
             opportunities.
           </p>
-          <p className="text-gray-500 text-sm leading-relaxed mb-8 italic">
+          <p className="text-gray-500 text-sm leading-relaxed mb-4 italic">
             We are a dynamic IT company specialising in web &amp; mobile applications,
             digital marketing, game development, AR, VR, blockchain, and AI solutions.
           </p>
@@ -179,7 +179,7 @@ export default function About() {
         {/* RIGHT — Updated with real images instead of icons */}
         <motion.div {...fadeUp(0.2)} className="relative h-80 md:h-96 hidden lg:block z-10">
           {/* Top Left Image */}
-          <div className="absolute left-0 top-0 w-66 h-90 rounded-2xl overflow-hidden shadow-xl border-4 border-white z-10">
+          <div className="absolute left-0 top-0 w-64 h-68 rounded-2xl overflow-hidden shadow-xl border-4 border-white z-10">
             <img
               src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=500&fit=crop&q=80"
               alt="Team collaboration"
@@ -211,7 +211,7 @@ export default function About() {
               IT Support For Business
             </span>
           </motion.div>
-          <motion.h2 {...fadeUp(0.1)} className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-14 font-heading">
+          <motion.h2 {...fadeUp(0.1)} className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-8 font-heading">
             Preparing for Your Success —{" "}
             <span className="text-gradient-primary">Trusted IT Services</span>
           </motion.h2>
@@ -290,7 +290,7 @@ export default function About() {
         
         <SectionWrapper className="relative z-10">
           
-          <motion.div {...fadeUp(0)} className="text-center mb-14">
+          <motion.div {...fadeUp(0)} className="text-center mb-8">
             <span className="inline-block text-xs font-bold tracking-widest uppercase text-primary bg-primary/8 px-4 py-1.5 rounded-full border border-primary/20 mb-4">
               Why Choose Us
             </span>
@@ -308,7 +308,7 @@ export default function About() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="relative overflow-hidden bg-[#0D1B3E] py-24 px-6">
+      <section className="relative overflow-hidden bg-[#0D1B3E] py-10 px-6">
         <div
             className="absolute inset-0 opacity-[.1] pointer-events-none"
             style={{
@@ -324,11 +324,11 @@ export default function About() {
           {...fadeUp(0)}
           className="relative z-10 max-w-3xl mx-auto text-center"
         >
-          <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-5 font-heading leading-tight">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-2 font-heading leading-tight">
             Let's Build Something{" "}
             <span className="text-[#29CCFF]">Great Together</span>
           </h2>
-          <p className="text-white/60 mb-10 text-lg">
+          <p className="text-white/60 mb-4 text-lg">
             Ready to transform your business with cutting-edge technology? Let's talk.
           </p>
           <Link to="/contact" className="btn-primary text-base px-10 py-4 inline-flex items-center gap-2">

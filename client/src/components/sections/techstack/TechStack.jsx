@@ -135,7 +135,7 @@ export default function TechStack() {
   return (
     <section
       id="techstack"
-      className="py-20 overflow-hidden relative"
+      className="py-8 overflow-hidden relative"
       ref={ref}
       aria-labelledby="techstack-heading"
       style={{

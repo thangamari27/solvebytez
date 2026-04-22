@@ -37,7 +37,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20"
+      className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-12"
       style={{
         background: "#1164E8",
         backgroundImage: "linear-gradient(135deg, #0D1B3E, transparent)",

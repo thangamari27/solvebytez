@@ -31,7 +31,7 @@ export default function Footer() {
         aria-hidden="true"
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-8">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-2">
         <motion.div
           variants={staggerContainer}
           initial="hidden"
@@ -206,9 +206,9 @@ export default function Footer() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.4, duration: 0.5 }}
-          className="border-t border-white/5 pt-6 flex flex-col sm:flex-row items-center justify-end gap-3"
+          className="border-t border-white/5 pt-2 flex flex-col sm:flex-row items-center justify-end gap-3"
         >
-          <p className="text-sm text-white/30">
+          <p className="text-xs text-white/30">
             © {year} SolveBytez. All rights reserved.
           </p>
         </motion.div>

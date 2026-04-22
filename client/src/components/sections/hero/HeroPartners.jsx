@@ -1,12 +1,11 @@
 import MarqueeBrandsDemo from "./MarqueeBrandsDemo";
-import SlidingLogoMarquee from "./SlidingLogoMarquee";
 
 export default function HeroPartners() {
  
   return (
     <div className="relative w-full overflow-hidden mt-5">
-      <div className="py-5">
-        <p className="text-center text-white/40 text-xs uppercase tracking-widest mb-4 font-semibold">
+      <div className="py-0">
+        <p className="text-center text-white/40 text-xs uppercase tracking-widest mb-1 font-semibold">
           Trusted by 100+ innovative companies
         </p>
 
