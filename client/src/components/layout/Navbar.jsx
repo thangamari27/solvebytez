@@ -202,8 +202,8 @@ export default function Navbar() {
               transition={{ type: "spring", damping: 25, stiffness: 200 }}
               className="fixed top-0 right-0 w-80 h-full bg-white z-50 overflow-y-auto shadow-2xl"
             >
-              <div className="sticky top-0 bg-white z-10 p-5 border-b border-gray-100 flex justify-between items-center">
-                <img src="/FinalLogo.png" className="h-10" alt="SolveBytez Logo" />
+              <div className="sticky top-0 bg-white z-10 px-5 pt-4 border-b border-gray-100 flex justify-between items-center">
+                <img src="/FinalLogo.png" className="h-20" alt="SolveBytez Logo" />
                 <button 
                   onClick={() => setMobileOpen(false)}
                   className="p-2 hover:bg-gray-100 rounded-full transition-colors"
@@ -213,7 +213,7 @@ export default function Navbar() {
                 </button>
               </div>
 
-              <div className="p-5 pb-8">
+              <div className="px-5 pb-8">
                 {NAV_LINKS.map((link) => (
                   <div key={link.id} className="mb-2">
                     {/* Mobile navigation item */}
