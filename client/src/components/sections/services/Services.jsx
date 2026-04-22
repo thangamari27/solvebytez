@@ -32,7 +32,7 @@ export default function Services() {
       {/* Gradient divider - Updated to use brand colors */}
       <div className="absolute top-0 left-0 right-0 h-1 opacity-60 section-divider" />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative  mx-auto px-4 sm:px-6 lg:px-8">
         {/* HEADER */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-4">
           <div className="space-y-4 max-w-2xl">

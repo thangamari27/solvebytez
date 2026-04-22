@@ -55,7 +55,7 @@ export default function AboutSection() {
         }}
         aria-hidden="true"
       />
-      
+
       {/* Black Overlay - Updated to use brand dark with opacity */}
       <div
         className="absolute inset-0 bg-brand-dark/60 backdrop-blur-sm"
@@ -73,7 +73,7 @@ export default function AboutSection() {
         aria-hidden="true"
       />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 relative z-10" ref={ref}>
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8 py-8 relative z-10" ref={ref}>
         <div className="grid lg:grid-cols-2 gap-14 items-center">
           {/* Left content - Glass Morphism Card */}
           <motion.div
@@ -93,7 +93,7 @@ export default function AboutSection() {
               }}
               aria-hidden="true"
             />
-            
+
             {/* Content container */}
             <div className="relative p-8 md:p-10 space-y-6">
               <motion.span
@@ -154,8 +154,8 @@ export default function AboutSection() {
               <motion.div
                 variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.5 } } }}
               >
-                <Button 
-                  variant="primary" 
+                <Button
+                  variant="primary"
                   size="md"
                   className="bg-white text-primary hover:bg-white/90 hover:shadow-lg transition-all"
                 >
@@ -258,7 +258,7 @@ export default function AboutSection() {
         }}
         aria-label="Company statistics"
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div className=" mx-auto px-4 sm:px-6 lg:px-8 py-10">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {STATS.map((stat) => {
               const Icon = STAT_ICONS[stat.icon] || Server;

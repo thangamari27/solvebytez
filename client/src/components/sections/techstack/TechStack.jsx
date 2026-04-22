@@ -5,7 +5,7 @@ import { services } from "@/data/services";
 import { Code2, Package, Sparkles, ArrowRight, Zap, Shield, Globe, Smartphone } from "lucide-react";
 import { slideLeft, slideRight, springConfig } from "@/utils/styles";
 
-const ORBIT_RADIUS = 130;
+const ORBIT_RADIUS = 220;
 
 function OrbitDiagram({ inView }) {
   return (
@@ -56,7 +56,7 @@ function OrbitDiagram({ inView }) {
         }}
         aria-hidden="true"
       >
-        <Sparkles className="w-7 h-7 text-white" />
+        <Sparkles className="w-10 h-10 text-white" />
       </motion.div>
 
       {/* Orbit icons - Using flat icon images */}
@@ -73,23 +73,23 @@ function OrbitDiagram({ inView }) {
             whileHover={{ scale: 1.4, zIndex: 10 }}
             className="absolute cursor-pointer group"
             style={{
-              left: `calc(50% + ${x}px)`,
-              top: `calc(50% + ${y}px)`,
+              left: `calc(45% + ${x}px)`,
+              top: `calc(45% + ${y}px)`,
               transform: "translate(-50%, -50%)",
             }}
           >
             <div
-              className="w-11 h-11 bg-white border border-gray-200 shadow-sm rounded-2xl flex items-center justify-center hover:border-[#00F2FE] hover:shadow-md transition-all overflow-hidden"
-              style={{ 
+              className="w-12 h-12 bg-white border border-gray-200 shadow-sm rounded-2xl flex items-center justify-center hover:border-[#00F2FE] hover:shadow-md transition-all overflow-hidden"
+              style={{
                 background: "white",
                 boxShadow: "0 2px 8px rgba(0,0,0,0.05)"
               }}
               title={tech.name}
             >
-              <img 
-                src={tech.icon} 
+              <img
+                src={tech.icon}
                 alt={tech.name}
-                className="w-6 h-6 object-contain"
+                className="w-8 h-8 object-contain"
                 loading="lazy"
               />
             </div>
@@ -147,7 +147,7 @@ export default function TechStack() {
         className="absolute top-1/2 left-1/4 w-[400px] h-[400px] bg-blue-50 rounded-full blur-[100px] pointer-events-none"
         aria-hidden="true"
       />
-      
+
       {/* Subtle pattern overlay */}
       <div
         className="absolute inset-0 opacity-[0.02] pointer-events-none"
@@ -158,7 +158,7 @@ export default function TechStack() {
         aria-hidden="true"
       />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left: Orbital diagram with flat icons */}
           <motion.div
@@ -199,7 +199,7 @@ export default function TechStack() {
                 </span>
               </h2>
               <p className="text-gray-600 text-base leading-relaxed">
-                We combine cutting-edge technologies with expert development practices to deliver 
+                We combine cutting-edge technologies with expert development practices to deliver
                 scalable, secure, and high-performance solutions that drive business growth.
               </p>
             </div>

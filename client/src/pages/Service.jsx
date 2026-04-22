@@ -22,10 +22,10 @@ function ServiceHero({ title, breadcrumb, heroImage, icon: Icon }) {
         style={
           heroImage
             ? {
-                backgroundImage: `url(${heroImage})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }
+              backgroundImage: `url(${heroImage})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }
             : {}
         }
       >
@@ -61,7 +61,7 @@ function ServiceHero({ title, breadcrumb, heroImage, icon: Icon }) {
       </div>
 
       {/* ── content ── */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-8 pb-6">
+      <div className="relative z-10 w-full  mx-auto px-6 sm:px-8 pb-6">
         {/* breadcrumb */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
@@ -127,7 +127,7 @@ const fadeUp = (delay = 0) => ({
 function ServiceIntro({ title, subtitle, description, image, imageAlt = "Service illustration" }) {
   return (
     <section className="section-pad bg-white">
-      <div className="max-w-7xl mx-auto">
+      <div className=" mx-auto">
         {/* centered header */}
         <motion.div {...fadeUp(0)} className="text-center mb-6">
           {subtitle && (
@@ -321,7 +321,7 @@ function ServiceSection({
 
   return (
     <section className={`section-pad ${isDark ? "bg-surface-muted" : "bg-white"}`}>
-      <div className="max-w-7xl mx-auto">
+      <div className=" mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {isEven ? (
             <>

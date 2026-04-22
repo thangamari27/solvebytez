@@ -28,7 +28,7 @@ export default function CTASection() {
         initial={{ scale: 0.98, opacity: 0 }}
         animate={inView ? { scale: 1, opacity: 1 } : { scale: 0.98, opacity: 0 }}
         transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+        className=" mx-auto px-4 sm:px-6 lg:px-8"
       >
         <div
           className="relative rounded-[2.5rem] overflow-hidden flex flex-col md:flex-row min-h-[480px] shadow-2xl"

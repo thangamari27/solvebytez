@@ -32,7 +32,7 @@ export default function Testimonials() {
         const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
         const maxScroll = scrollWidth - clientWidth;
         const nextScroll = scrollLeft + 400;
-        
+
         if (nextScroll >= maxScroll) {
           // Smooth scroll back to start
           scrollRef.current.scrollTo({ left: 0, behavior: "smooth" });
@@ -53,7 +53,7 @@ export default function Testimonials() {
     if (!scrollRef.current) return;
     const scrollAmount = scrollRef.current.clientWidth * 0.8;
     scrollRef.current.scrollBy({ left: dir * scrollAmount, behavior: "smooth" });
-    
+
     // Pause auto-scroll temporarily on manual scroll
     setAutoScrollEnabled(false);
     setTimeout(() => setAutoScrollEnabled(true), 5000);
@@ -98,7 +98,7 @@ export default function Testimonials() {
         aria-hidden="true"
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10  mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-6">
           <div className="space-y-4 max-w-2xl">
@@ -107,8 +107,8 @@ export default function Testimonials() {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.1 }}
             >
-              <Badge 
-                variant="primary" 
+              <Badge
+                variant="primary"
                 className="bg-white/10 text-brand-cyan border-white/20"
               >
                 Success Stories
@@ -169,8 +169,8 @@ export default function Testimonials() {
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
           className="flex gap-6 overflow-x-auto pb-4 scroll-smooth snap-x snap-mandatory"
-          style={{ 
-            scrollbarWidth: "none", 
+          style={{
+            scrollbarWidth: "none",
             msOverflowStyle: "none",
             WebkitOverflowScrolling: "touch",
           }}
@@ -178,8 +178,8 @@ export default function Testimonials() {
           aria-label="Testimonials list"
         >
           {testimonials.map((testimonial, index) => (
-            <div 
-              key={testimonial.id} 
+            <div
+              key={testimonial.id}
               className="snap-start shrink-0 w-[85vw] sm:w-[380px] lg:w-[420px] transform transition-all duration-300 hover:-translate-y-1"
               role="listitem"
             >
@@ -193,7 +193,7 @@ export default function Testimonials() {
               >
                 {/* Quote icon - Updated to use brand cyan with low opacity */}
                 <Quote className="w-10 h-10 text-brand-cyan/10 absolute top-6 right-6" aria-hidden="true" />
-                
+
                 {/* Star rating - Updated to use brand cyan */}
                 <div className="flex gap-1 mb-6" aria-label="5 out of 5 stars rating">
                   {[...Array(5)].map((_, i) => (
@@ -214,7 +214,7 @@ export default function Testimonials() {
                 <div className="mt-auto pt-6 border-t border-gray-100">
                   <div className="flex items-center gap-3">
                     {/* Initial avatar circle - Updated with brand gradient */}
-                    <div 
+                    <div
                       className="relative w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0"
                       style={{
                         background: "linear-gradient(135deg, #29CCFF, #1164E8)",

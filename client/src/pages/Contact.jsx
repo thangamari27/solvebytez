@@ -58,17 +58,17 @@ function PageHero({ title, crumb }) {
   return (
     <section className="relative h-[380px] md:h-[440px] flex items-end overflow-hidden">
       {/* Background Image with Overlay */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `url("https://images.unsplash.com/photo-1707388865290-8ac993cae951?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`,
         }}
         aria-hidden="true"
       />
-      
+
       {/* Dark Overlay - Low Opacity */}
       <div className="absolute inset-0 bg-black/40" aria-hidden="true" />
-      
+
       {/* Original bg container with gradient (kept for consistency) */}
       <div className="absolute inset-0 bg-[#0D1B3E] mix-blend-multiply opacity-80">
         <div className="absolute inset-0 bg-gradient-to-br from-[#1164E8]/40 via-transparent to-[#29CCFF]/20" />
@@ -84,7 +84,7 @@ function PageHero({ title, crumb }) {
         <div className="absolute bottom-0 left-10 w-64 h-64 rounded-full bg-[#29CCFF]/10 blur-2xl" />
       </div>
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pb-6">
+      <div className="relative z-10 w-full  mx-auto px-6 pb-6">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}

@@ -8,7 +8,7 @@ const doubled = [...partners, ...partners];
 export default function Partners() {
   return (
     <section className="py-12 bg-white border-y border-slate-100" id="partners">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 text-center">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8 mb-6 text-center">
         <p className="text-sm text-slate-400 font-medium">
           Trusted by{" "}
           <span className="text-slate-600 font-semibold">100+ Famous Companies</span>

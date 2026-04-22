@@ -9,17 +9,17 @@ export default function Footer() {
   return (
     <footer className="relative bg-dark border-t border-white/5 overflow-hidden" role="contentinfo">
       {/* Background Image with Overlay */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
         style={{
           backgroundImage: `url("")`,
         }}
         aria-hidden="true"
       />
-      
+
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-dark/95 to-dark/98" aria-hidden="true" />
-      
+
       {/* Subtle pattern overlay */}
       <div
         className="absolute inset-0 opacity-[0.02] pointer-events-none"
@@ -31,7 +31,7 @@ export default function Footer() {
         aria-hidden="true"
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-2">
+      <div className="relative z-10  mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-2">
         <motion.div
           variants={staggerContainer}
           initial="hidden"
@@ -67,8 +67,8 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img 
-                    src={social.iconSrc} 
+                  <img
+                    src={social.iconSrc}
                     alt={social.label}
                     className="w-4 h-4 transition-opacity"
                     loading="lazy"

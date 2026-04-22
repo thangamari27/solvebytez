@@ -179,7 +179,7 @@ function PortfolioHero() {
         <div className="absolute bottom-0 left-10 w-64 h-64 rounded-full bg-[#29CCFF]/10 blur-2xl" />
       </div>
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pb-6">
+      <div className="relative z-10 w-full  mx-auto px-6 pb-6">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
@@ -248,7 +248,7 @@ function PortfolioFilter({ active, onChange }) {
 function ProjectCard({ project, onClick, style }) {
   const [hovered, setHovered] = useState(false);
   const [imageError, setImageError] = useState(false);
-  
+
   return (
     <div
       onClick={() => onClick(project)}
@@ -271,8 +271,8 @@ function ProjectCard({ project, onClick, style }) {
       {/* Image area */}
       <div style={{ position: "relative", height: 200, overflow: "hidden" }}>
         {!imageError ? (
-          <img 
-            src={project.image} 
+          <img
+            src={project.image}
             alt={project.title}
             style={{
               width: "100%",
@@ -432,7 +432,7 @@ function ProjectGrid({ category }) {
 function ProjectModal({ project, onClose }) {
   const [mounted, setMounted] = useState(false);
   const [imageError, setImageError] = useState(false);
-  
+
   useEffect(() => {
     setTimeout(() => setMounted(true), 20);
     document.body.style.overflow = "hidden";
@@ -467,7 +467,7 @@ function ProjectModal({ project, onClose }) {
       >
         {/* Header visual with project image */}
         <div style={{
-          height: 240, 
+          height: 240,
           position: "relative",
           overflow: "hidden",
           borderRadius: "24px 24px 0 0",
@@ -478,11 +478,11 @@ function ProjectModal({ project, onClose }) {
             background: project.gradient,
             zIndex: 0,
           }} />
-          
+
           {/* Project Image */}
           {!imageError && project.image ? (
-            <img 
-              src={project.image} 
+            <img
+              src={project.image}
               alt={project.title}
               style={{
                 width: "100%",
@@ -516,7 +516,7 @@ function ProjectModal({ project, onClose }) {
               </div>
             </div>
           )}
-          
+
           {/* Dark overlay for better text visibility */}
           <div style={{
             position: "absolute", inset: 0,

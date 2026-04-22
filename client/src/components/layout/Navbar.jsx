@@ -79,7 +79,7 @@ export default function Navbar() {
         transition={{ duration: 0.35 }}
         className="fixed left-0 right-0 z-40 bg-white border-b border-gray-200"
       >
-        <div className="max-w-7xl mx-auto px-4">
+        <div className=" mx-auto px-4">
           <div className="flex items-center justify-between h-16">
 
             {/* Logo */}
@@ -90,8 +90,8 @@ export default function Navbar() {
             {/* Desktop Nav */}
             <ul className="flex-1 justify-end hidden lg:flex items-center gap-2 relative">
               {NAV_LINKS.map((link) => (
-                <li 
-                  key={link.id} 
+                <li
+                  key={link.id}
                   className="relative"
                   onMouseEnter={() => link.submenu && handleMouseEnter(link.id)}
                   onMouseLeave={handleMouseLeave}
@@ -106,18 +106,16 @@ export default function Navbar() {
                         setActiveLink(link.id);
                       }
                     }}
-                    className={`group px-4 py-2 text-sm font-semibold inline-flex items-center gap-1 ${
-                      activeLink === link.id
-                        ? "text-primary"
-                        : "text-gray-600 hover:text-primary"
-                    }`}
+                    className={`group px-4 py-2 text-sm font-semibold inline-flex items-center gap-1 ${activeLink === link.id
+                      ? "text-primary"
+                      : "text-gray-600 hover:text-primary"
+                      }`}
                   >
                     {link.label}
                     {link.submenu && (
-                      <ChevronDown 
-                        className={`w-4 h-4 transition-transform duration-200 ${
-                          openDropdown === link.id ? "rotate-180" : ""
-                        }`}
+                      <ChevronDown
+                        className={`w-4 h-4 transition-transform duration-200 ${openDropdown === link.id ? "rotate-180" : ""
+                          }`}
                       />
                     )}
                   </a>
@@ -130,8 +128,8 @@ export default function Navbar() {
                         initial={{ opacity: 0, y: -20, scaleY: 0 }}
                         animate={{ opacity: 1, y: 0, scaleY: 1 }}
                         exit={{ opacity: 0, y: -20, scaleY: 0 }}
-                        transition={{ 
-                          duration: 0.25, 
+                        transition={{
+                          duration: 0.25,
                           ease: [0.22, 1, 0.36, 1],
                           scaleY: { duration: 0.2 }
                         }}
@@ -204,7 +202,7 @@ export default function Navbar() {
             >
               <div className="sticky top-0 bg-white z-10 px-5 pt-4 border-b border-gray-100 flex justify-between items-center">
                 <img src="/FinalLogo.png" className="h-20" alt="SolveBytez Logo" />
-                <button 
+                <button
                   onClick={() => setMobileOpen(false)}
                   className="p-2 hover:bg-gray-100 rounded-full transition-colors"
                   aria-label="Close menu"
@@ -229,11 +227,10 @@ export default function Navbar() {
                             setActiveLink(link.id);
                           }
                         }}
-                        className={`flex-1 py-3 text-base font-semibold ${
-                          activeLink === link.id
-                            ? "text-primary"
-                            : "text-gray-700"
-                        }`}
+                        className={`flex-1 py-3 text-base font-semibold ${activeLink === link.id
+                          ? "text-primary"
+                          : "text-gray-700"
+                          }`}
                       >
                         {link.label}
                       </a>
@@ -242,10 +239,9 @@ export default function Navbar() {
                           onClick={(e) => handleMobileDropdownToggle(link.id, e)}
                           className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
                         >
-                          <ChevronDown 
-                            className={`w-5 h-5 text-gray-500 transition-transform duration-200 ${
-                              mobileDropdownOpen === link.id ? "rotate-180" : ""
-                            }`}
+                          <ChevronDown
+                            className={`w-5 h-5 text-gray-500 transition-transform duration-200 ${mobileDropdownOpen === link.id ? "rotate-180" : ""
+                              }`}
                           />
                         </button>
                       )}

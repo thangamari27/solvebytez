@@ -54,17 +54,17 @@ function PageHero({ title, crumb }) {
   return (
     <section className="relative h-[380px] md:h-[440px] flex items-end overflow-hidden">
       {/* Background Image with Overlay */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&auto=format&fit=crop&q=80")`,
         }}
         aria-hidden="true"
       />
-      
+
       {/* Dark Overlay - Low Opacity */}
       <div className="absolute inset-0 bg-black/40" aria-hidden="true" />
-      
+
       {/* Original bg container with gradient (kept for consistency) */}
       <div className="absolute inset-0 bg-[#0D1B3E] mix-blend-multiply opacity-80">
         <div className="absolute inset-0 bg-gradient-to-br from-[#1164E8]/40 via-transparent to-[#29CCFF]/20" />
@@ -82,7 +82,7 @@ function PageHero({ title, crumb }) {
         <div className="absolute bottom-0 left-10 w-64 h-64 rounded-full bg-[#29CCFF]/10 blur-2xl" />
       </div>
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pb-6">
+      <div className="relative z-10 w-full  mx-auto px-6 pb-6">
         <motion.div {...fadeUp(0.1)}>
           <div className="flex items-center gap-2 text-sm text-[#29CCFF]/80 mb-3 font-medium">
             <Link to="/" className="hover:text-[#29CCFF] transition-colors">Home</Link>
@@ -101,7 +101,7 @@ function PageHero({ title, crumb }) {
 
 function SectionWrapper({ children, className = "" }) {
   return (
-    <section className={`section-pad max-w-7xl mx-auto ${className}`}>
+    <section className={`section-pad  mx-auto ${className}`}>
       {children}
     </section>
   );
@@ -134,7 +134,7 @@ export default function About() {
       <SectionWrapper className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative">
         {/* Background Pattern for Mission Section */}
         <div
-          className="absolute inset-0 pointer-events-none opacity-3"
+          className="absolute inset-0 pointer-events-none opacity-10"
           style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23104cba' fill-opacity='0.3'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
             backgroundRepeat: "repeat",
@@ -151,7 +151,7 @@ export default function About() {
           }}
           aria-hidden="true"
         />
-        
+
         {/* LEFT */}
         <motion.div {...fadeUp(0)} className="relative z-10">
           <span className="inline-block text-xs font-bold tracking-widest uppercase text-primary bg-primary/8 px- py- rounded-full mb-2 border border-primary/20">
@@ -187,7 +187,7 @@ export default function About() {
               loading="lazy"
             />
           </div>
-          
+
           {/* Bottom Right Image */}
           <div className="absolute right-0 bottom-0 w-66 h-80 rounded-2xl overflow-hidden shadow-xl border-4 border-white z-10">
             <img
@@ -197,7 +197,7 @@ export default function About() {
               loading="lazy"
             />
           </div>
-          
+
           {/* Decorative ring */}
           <div className="absolute inset-0 m-auto w-40 h-40 rounded-full border-2 border-dashed border-primary/20 animate-spin-slow" />
         </motion.div>
@@ -287,9 +287,9 @@ export default function About() {
           }}
           aria-hidden="true"
         />
-        
+
         <SectionWrapper className="relative z-10">
-          
+
           <motion.div {...fadeUp(0)} className="text-center mb-8">
             <span className="inline-block text-xs font-bold tracking-widest uppercase text-primary bg-primary/8 px-4 py-1.5 rounded-full border border-primary/20 mb-4">
               Why Choose Us
@@ -310,12 +310,12 @@ export default function About() {
       {/* ── CTA ── */}
       <section className="relative overflow-hidden bg-[#0D1B3E] py-10 px-6">
         <div
-            className="absolute inset-0 opacity-[.1] pointer-events-none"
-            style={{
-              backgroundImage:
-                "url('/pattern1.png')",
-            }}
-          />
+          className="absolute inset-0 opacity-[.1] pointer-events-none"
+          style={{
+            backgroundImage:
+              "url('/pattern1.png')",
+          }}
+        />
         <div className="absolute inset-0 bg-gradient-to-br from-[#1164E8]/30 to-transparent" />
         <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-[#29CCFF]/10 blur-3xl" />
         <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-[#1164E8]/20 blur-2xl" />
