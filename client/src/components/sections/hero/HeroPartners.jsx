@@ -3,11 +3,11 @@ import MarqueeBrandsDemo from "./MarqueeBrandsDemo";
 export default function HeroPartners() {
  
   return (
-    <div className="relative w-full overflow-hidden mt-5">
+    <div className="relative w-full overflow-hidden">
       <div className="py-0">
-        <p className="text-center text-white/40 text-xs uppercase tracking-widest mb-1 font-semibold">
+        {/* <p className="text-center text-white/40 text-xs uppercase tracking-widest mb- font-semibold">
           Trusted by 100+ innovative companies
-        </p>
+        </p> */}
 
         <div className="relative">
           {/* Gradient fade edges overlay - matches the marquee's built-in blur */}

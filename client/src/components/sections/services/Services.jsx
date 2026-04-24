@@ -30,7 +30,7 @@ export default function Services() {
       />
 
       {/* Gradient divider - Updated to use brand colors */}
-      <div className="absolute top-0 left-0 right-0 h-1 opacity-60 section-divider" />
+      {/* <div className="absolute top-0 left-0 right-0 h-1 opacity-60 section-divider" /> */}
 
       <div className="relative  mx-auto px-4 sm:px-6 lg:px-8">
         {/* HEADER */}

@@ -25,7 +25,7 @@ export default function MarqueeBrandsDemo() {
             key={i}
             src={brand.src}
             alt={brand.name}
-            className="w-36 h-28 mr-10 object-contain"
+            className="w-40 h-40 mr-4 object-contain"
           />
         ))}
       </Marquee>

@@ -267,7 +267,7 @@ export default function TechStack() {
               transition={{ delay: 0.8 }}
               className="pt-4"
             >
-              <div className="flex items-center gap-6 flex-wrap">
+              <div className="flex items-center justify-center gap-6 flex-wrap">
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 rounded-full bg-[#00F2FE]" />
                   <span className="text-sm text-gray-600">50+ Technologies</span>

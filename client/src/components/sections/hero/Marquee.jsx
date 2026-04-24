@@ -10,7 +10,7 @@ export function Marquee({
   ...props
 }) {
   const containerClasses = `
-    group flex overflow-hidden p-2
+    group flex overflow-hidden p-
     ${vertical ? "flex-col" : "flex-row"}
     ${pauseOnHover ? "pause-on-hover" : ""}
     ${className}
@@ -27,7 +27,7 @@ export function Marquee({
       <style>
         {`
           :root {
-            --gap: 1rem;
+            --gap: 10px;
             --duration: 40s;
           }
 
